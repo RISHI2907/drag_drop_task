@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 600px; /* Should be removed. Only for demonstration */
+}
+.dragzone,.dropzone{
+  border:2px solid black;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
